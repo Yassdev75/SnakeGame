@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container disponibility h-100 justify-content-center align-items-center">
+        <p>Ce site n'est pas encore disponible en version mobile</p>
+    </div>
+    <div class="container-content">
+        <div class="title d-flex justify-content-center align-items-center">
+            <h1>Snake Game</h1>
+        </div>
+        <div id="canvas-container" class="h-75 row m-0">
+            <div id="regles-container" class="col-2">
+                <h3>Régles:</h3>
+                <p id="testo"></p>
+
+                <p class="pt-5">Vous controlez le serpent qui doit manger la pomme. Tentez de faire un maximum de point mais attention à ce que le serpent ne se morde pas lui même, car cela mettrait fin à la partie</p>
+            </div>
+            <div class="game" class="col-8 d-flex justify-content-center align-items-center">
+                <canvas height="600" width="600" id="canvas">
+                </canvas>
+                <div id="child">
+                    <div id="button" onclick="lowOpacity()">
+                        <p class="m-0">PLAY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h2>SCORE:</h2>
+                <p id="score" style="color: white; font-weight: bold;"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/apple.js "></script>
+    <script src="js/main.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/draw.js "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
